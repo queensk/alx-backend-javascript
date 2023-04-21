@@ -25,6 +25,9 @@ The `error-handling.js` file shows how to handle errors that may occur while wor
 ## Running the Examples
 
 To run any of the examples, simply run the corresponding file using Node.js:
+```
+npm run dev 9-main.js 
+```
 
 ## node basic-promise.js
 
