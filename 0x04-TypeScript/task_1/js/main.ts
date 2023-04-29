@@ -23,4 +23,21 @@ class StudentClass{
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    workOnHomeWork = (): string => "Currently working"
+
+    displayName = (): string => this.firstName
 }
+
+interface StudentConstructor {
+    new (firstName: string, lastName: string): StudentClass;
+}
+
+interface StudentInterface {
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+const student = new StudentClass("Paul", "jerry");
+console.log(student.displayName())
+console.log(student.workOnHomeWork())
