@@ -14,4 +14,13 @@ interface Directors extends Teacher{
 
 
 const printTeacher = (firstName: string, lastName: string) => `${firstName.charAt(0)}. ${lastName}`
- 
+
+class StudentClass{
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
