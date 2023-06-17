@@ -29,7 +29,7 @@ export class StudentsController {
 
     try {
       const database = await readDatabase('./database.csv');
-      const students = database[major.toLowerCase()] || [];
+      const students = database[major.toUpperCase()] || [];
 
       response.status(200).send(`List: ${students.join(', ')}`);
     } catch (error) {
